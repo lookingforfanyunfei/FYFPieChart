@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// 圆环宽度，默认30
 @property (nonatomic, assign) CGFloat roundWidth;
 /// 数据源
-@property (nonatomic, strong) NSArray<FYFPieModel *>*models;
+@property (nonatomic, strong) NSArray<FYFPieModel *>*pieModels;
 
 @end
 

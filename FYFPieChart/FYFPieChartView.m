@@ -7,6 +7,8 @@
 
 #import "FYFPieChartView.h"
 #import "FYFPieModel.h"
+#import "NSString+FYFExtension.h"
+#import "NSMutableAttributedString+FYFExtension.h"
 
 @implementation FYFPieChartView
 
@@ -44,7 +46,7 @@
 }
 
 - (void)drawRect:(CGRect)rect {
-    if (!self.models.count) {
+    if (!self.pieModels.count) {
         [self removeSublayers];
         return;
     }
@@ -71,8 +73,8 @@
     /// 记录每个圆弧中心弧度
     NSMutableArray *radianCenterArray = [NSMutableArray array];
     
-    for (NSInteger index = 0; index < self.models.count; index ++) {
-        FYFPieModel *model = self.models[index];
+    for (NSInteger index = 0; index < self.pieModels.count; index ++) {
+        FYFPieModel *model = self.pieModels[index];
         end = model.scale + start;
         radianEnd = radianStart + model.scale * M_PI * 2;
         
@@ -81,8 +83,10 @@
         [self.layer addSublayer:radianlayer];
         
         /// 绘制圆弧之间的分割线
-        CAShapeLayer *linelayer = [self drawLayerWith:[UIColor clearColor] strokeColor:[UIColor whiteColor] strokeStart:start strokeEnd:start + 0.002 zPosition:2 lineWidth:_roundWidth path:path.CGPath];
-        [self.layer addSublayer:linelayer];
+        if (self.pieModels.count > 1) {
+            CAShapeLayer *linelayer = [self drawLayerWith:[UIColor clearColor] strokeColor:[UIColor whiteColor] strokeStart:start strokeEnd:start + 0.002 zPosition:2 lineWidth:_roundWidth path:path.CGPath];
+            [self.layer addSublayer:linelayer];
+        }
         
         /// 获取圆弧的中心角度
         CGFloat radianCenter = (radianStart + radianEnd) * 0.5;
@@ -109,7 +113,7 @@
         CGFloat radianCenter = [radianCenterArray[index] floatValue];
         
         /// 绘制模型
-        FYFPieModel *model = self.models[index];
+        FYFPieModel *model = self.pieModels[index];
         
         /// 指引线起点
         NSValue *lineStartValue = lineStartPointArray[index];
@@ -125,22 +129,40 @@
         CGFloat endX;
         CGFloat endY;
         
-        ///计算折点到中心的垂直距离
+        ///计算折点到中心的垂直距离,添加20像素修正误差
         CGFloat breakMargin = fabs(width - breakX) + 20;
         
         /// 计算指引线长度
         CGFloat lineLength = width - breakMargin ;
         
         /// 文字高度和宽度
-        CGFloat titleWidth = 100;
-        CGFloat titleHeight = 54;
+        CGFloat textWidth = 98;
+        CGFloat textHeight = 54;
+        CGFloat titleWidth = 0;
+        CGFloat descWidth = 0;
+        if (model.title.length) {
+            titleWidth = [model.title fyf_sizeWithFont:[UIFont systemFontOfSize:14]].width;
+        }
+        if (model.desc.length) {
+            descWidth = [model.desc fyf_sizeWithFont:[UIFont systemFontOfSize:12]].width;
+        }
+        /// 增加2个像素(指引线和text之间的间距)
+        textWidth = MAX(titleWidth, descWidth) + 2;
+
+        if (model.title.length) {
+            textHeight = [model.title fyf_heightWithWidth:textWidth font:[UIFont systemFontOfSize:14] lineSpace:0 wordSpace:0 numberOfLines:0];
+        }
+        if (model.desc.length) {
+            /// 加上2个像素(title和desc之间的间距)
+            textHeight += [model.desc fyf_heightWithWidth:textWidth font:[UIFont systemFontOfSize:12] lineSpace:0 wordSpace:0 numberOfLines:0] + 2;
+        }
         
         /// 文字的Point
-        CGFloat titleX;
-        CGFloat titleY;
+        CGFloat textX;
+        CGFloat textY;
         
         /// 文本段落属性
-        NSMutableParagraphStyle * paragraph = [[NSMutableParagraphStyle alloc]init];
+        NSMutableParagraphStyle *paragraph = [[NSMutableParagraphStyle alloc]init];
         /// 文字靠右
         paragraph.alignment = NSTextAlignmentRight;
         /// 判断x位置，确定在指引线向左还是向右绘制
@@ -149,28 +171,28 @@
         if (startX <= width) {
             /// 在左边
             paragraph.alignment = NSTextAlignmentLeft;
-            endX = 15 + titleWidth;
+            endX = 15 + textWidth;
             endY = breakY;
             
-            titleX = endX - titleWidth;
+            textX = endX - textWidth;
         } else {
             /// 在右边
-            endX = self.frame.size.width - 15 - titleWidth;
+            endX = self.frame.size.width - 15 - textWidth;
             endY = breakY;
             
-            titleX = endX ;
+            textX = endX ;
         }
-        titleY = endY - 10;
+        textY = endY - 10;
         
         /// 文字超出当前视图顶部
-        if (titleY < 0) {
-            titleY = 0;
+        if (textY < 0) {
+            textY = 0;
         }
         
         /// 文字超出当前视图底部
-        if ((titleY + titleHeight) >= self.frame.size.height) {
-            titleY = endY - titleHeight;
-        } 
+        if ((textY + textHeight) >= self.frame.size.height) {
+            textY = endY - textHeight;
+        }
         
         breakY = endY;
         
@@ -189,10 +211,22 @@
         /// 把上下文的内容显示到View上(渲染到View的layer)(stroke fill)
         CGContextStrokePath(ctx);
         
-        // 绘制文字描述
-        [model.desc drawInRect:CGRectMake(titleX, titleY, titleWidth, titleHeight) withAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:13.0],NSForegroundColorAttributeName:[UIColor redColor],NSParagraphStyleAttributeName:paragraph}];
+        /// 绘制文字描述
+        NSString *text = [NSString stringWithFormat:@"%@\n%@",model.title, model.desc];
+        NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:text];
+        
+        [attributedString fyf_addColor:[UIColor blackColor] substring:model.title];
+        [attributedString fyf_addFont:[UIFont systemFontOfSize:14] substring:model.title];
+        
+        [attributedString fyf_addColor:[UIColor grayColor] substring:model.desc];
+        [attributedString fyf_addFont:[UIFont systemFontOfSize:12] substring:model.desc];
+        
+        [attributedString fyf_addAlignment:paragraph.alignment substring:text];
+        
+        [attributedString drawInRect:CGRectMake(textX, textY, textWidth, textHeight)];
     }
 }
+
 
 - (CAShapeLayer *)drawLayerWith:(UIColor *)fillColor strokeColor:(UIColor *)strokeColor strokeStart:(CGFloat)strokeStart strokeEnd:(CGFloat)strokeEnd zPosition:(CGFloat)zPosition lineWidth:(CGFloat)lineWidth path:(CGPathRef)path {
     CAShapeLayer *layer = [[CAShapeLayer alloc] init];

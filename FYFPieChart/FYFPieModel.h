@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface FYFPieModel : NSObject
 
+@property (nonatomic, copy) NSString *title;
 @property (nonatomic, copy) NSString *desc;
 @property (nonatomic, assign)  CGFloat scale;
 @property (nonatomic, strong)  UIColor *color;

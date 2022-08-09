@@ -26,58 +26,26 @@
     
     FYFPieModel *model1 = [[FYFPieModel alloc] init];
     model1.scale = 0.4;
-    model1.desc = @"息差收入\n2890.28万元\n23.12%";
+    model1.title = @"息差收入";
+    model1.desc = @"2890.28万元\n23.12%";
     model1.color = [UIColor redColor];
     
     
     FYFPieModel *model2 = [[FYFPieModel alloc] init];
     model2.scale = 0.3;
-    model2.desc = @"手续费减免收入\n2890.28万元\n23.12%";
+    model2.title = @"手续费减免收入";
+    model2.desc = @"2890.28万元\n23.12%";
     model2.color = [UIColor orangeColor];
     
     
     FYFPieModel *model3 = [[FYFPieModel alloc] init];
     model3.scale = 0.3;
-    model3.desc = @"留存手续费\n2890.28万元\n23.12%";
+    model3.title = @"留存手续费";
+    model3.desc = @"2890.28万元\n23.12%";
     model3.color = [UIColor blueColor];
     
-    FYFPieModel *model4 = [[FYFPieModel alloc] init];
-    model4.scale = 0.1;
-    model4.desc = @"息差收入\n2890.28万元\n23.12%";
-    model4.color = [UIColor greenColor];
-    
-    FYFPieModel *model5 = [[FYFPieModel alloc] init];
-    model5.scale = 0.1;
-    model5.desc = @"手续费减免收入\n2890.28万元\n23.12%";
-    model5.color = [UIColor cyanColor];
-    
-    FYFPieModel *model6 = [[FYFPieModel alloc] init];
-    model6.scale = 0.1;
-    model6.desc = @"留存手续费\n2890.28万元\n23.12%";
-    model6.color = [UIColor blueColor];
-    
-    FYFPieModel *model7 = [[FYFPieModel alloc] init];
-    model7.scale = 0.1;
-    model7.desc = @"息差收入\n2890.28万元\n23.12%";
-    model7.color = [UIColor purpleColor];
-    
-    FYFPieModel *model8 = [[FYFPieModel alloc] init];
-    model8.scale = 0.1;
-    model8.desc = @"手续费减免收入\n2890.28万元\n23.12%";
-    model8.color = [UIColor grayColor];
-    
-    FYFPieModel *model9 = [[FYFPieModel alloc] init];
-    model9.scale = 0.1;
-    model9.desc = @"留存手续费\n2890.28万元\n23.12%";
-    model9.color = [UIColor darkGrayColor];
-    
-    FYFPieModel *model10 = [[FYFPieModel alloc] init];
-    model10.scale = 0.1;
-    model10.desc = @"息差收入\n2890.28万元\n23.12%";
-    model10.color = [UIColor blueColor];
-    
     [self.view addSubview:self.pieChartView];
-    self.pieChartView.models = @[model1, model2, model3];
+    self.pieChartView.pieModels = @[model1, model2, model3];
     [self.pieChartView draw];
     
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];

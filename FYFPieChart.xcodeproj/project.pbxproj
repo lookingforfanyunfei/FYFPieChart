@@ -19,6 +19,8 @@
 		0FBD8F2828A1FDB40095EB4C /* FYFPieChartUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBD8F2728A1FDB40095EB4C /* FYFPieChartUITestsLaunchTests.m */; };
 		0FBD8F3828A1FE090095EB4C /* FYFPieChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBD8F3528A1FE090095EB4C /* FYFPieChartView.m */; };
 		0FBD8F3928A1FE090095EB4C /* FYFPieModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBD8F3628A1FE090095EB4C /* FYFPieModel.m */; };
+		0FBD8F3C28A200330095EB4C /* NSString+FYFExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBD8F3B28A200330095EB4C /* NSString+FYFExtension.m */; };
+		0FBD8F3F28A204020095EB4C /* NSMutableAttributedString+FYFExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBD8F3E28A204020095EB4C /* NSMutableAttributedString+FYFExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,10 @@
 		0FBD8F3528A1FE090095EB4C /* FYFPieChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYFPieChartView.m; sourceTree = "<group>"; };
 		0FBD8F3628A1FE090095EB4C /* FYFPieModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYFPieModel.m; sourceTree = "<group>"; };
 		0FBD8F3728A1FE090095EB4C /* FYFPieChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYFPieChartView.h; sourceTree = "<group>"; };
+		0FBD8F3A28A200330095EB4C /* NSString+FYFExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+FYFExtension.h"; sourceTree = "<group>"; };
+		0FBD8F3B28A200330095EB4C /* NSString+FYFExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+FYFExtension.m"; sourceTree = "<group>"; };
+		0FBD8F3D28A204020095EB4C /* NSMutableAttributedString+FYFExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+FYFExtension.h"; sourceTree = "<group>"; };
+		0FBD8F3E28A204020095EB4C /* NSMutableAttributedString+FYFExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+FYFExtension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +122,10 @@
 				0FBD8F0328A1FDB20095EB4C /* SceneDelegate.m */,
 				0FBD8F0528A1FDB20095EB4C /* ViewController.h */,
 				0FBD8F0628A1FDB20095EB4C /* ViewController.m */,
+				0FBD8F3A28A200330095EB4C /* NSString+FYFExtension.h */,
+				0FBD8F3B28A200330095EB4C /* NSString+FYFExtension.m */,
+				0FBD8F3D28A204020095EB4C /* NSMutableAttributedString+FYFExtension.h */,
+				0FBD8F3E28A204020095EB4C /* NSMutableAttributedString+FYFExtension.m */,
 				0FBD8F3728A1FE090095EB4C /* FYFPieChartView.h */,
 				0FBD8F3528A1FE090095EB4C /* FYFPieChartView.m */,
 				0FBD8F3428A1FE090095EB4C /* FYFPieModel.h */,
@@ -278,10 +288,12 @@
 			files = (
 				0FBD8F0728A1FDB20095EB4C /* ViewController.m in Sources */,
 				0FBD8F3928A1FE090095EB4C /* FYFPieModel.m in Sources */,
+				0FBD8F3F28A204020095EB4C /* NSMutableAttributedString+FYFExtension.m in Sources */,
 				0FBD8F0128A1FDB20095EB4C /* AppDelegate.m in Sources */,
 				0FBD8F1228A1FDB30095EB4C /* main.m in Sources */,
 				0FBD8F3828A1FE090095EB4C /* FYFPieChartView.m in Sources */,
 				0FBD8F0428A1FDB20095EB4C /* SceneDelegate.m in Sources */,
+				0FBD8F3C28A200330095EB4C /* NSString+FYFExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
