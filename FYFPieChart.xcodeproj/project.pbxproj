@@ -1,0 +1,614 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0FBD8F0128A1FDB20095EB4C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBD8F0028A1FDB20095EB4C /* AppDelegate.m */; };
+		0FBD8F0428A1FDB20095EB4C /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBD8F0328A1FDB20095EB4C /* SceneDelegate.m */; };
+		0FBD8F0728A1FDB20095EB4C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBD8F0628A1FDB20095EB4C /* ViewController.m */; };
+		0FBD8F0A28A1FDB20095EB4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FBD8F0828A1FDB20095EB4C /* Main.storyboard */; };
+		0FBD8F0C28A1FDB30095EB4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FBD8F0B28A1FDB30095EB4C /* Assets.xcassets */; };
+		0FBD8F0F28A1FDB30095EB4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FBD8F0D28A1FDB30095EB4C /* LaunchScreen.storyboard */; };
+		0FBD8F1228A1FDB30095EB4C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBD8F1128A1FDB30095EB4C /* main.m */; };
+		0FBD8F1C28A1FDB40095EB4C /* FYFPieChartTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBD8F1B28A1FDB40095EB4C /* FYFPieChartTests.m */; };
+		0FBD8F2628A1FDB40095EB4C /* FYFPieChartUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBD8F2528A1FDB40095EB4C /* FYFPieChartUITests.m */; };
+		0FBD8F2828A1FDB40095EB4C /* FYFPieChartUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBD8F2728A1FDB40095EB4C /* FYFPieChartUITestsLaunchTests.m */; };
+		0FBD8F3828A1FE090095EB4C /* FYFPieChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBD8F3528A1FE090095EB4C /* FYFPieChartView.m */; };
+		0FBD8F3928A1FE090095EB4C /* FYFPieModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBD8F3628A1FE090095EB4C /* FYFPieModel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0FBD8F1828A1FDB40095EB4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0FBD8EF428A1FDB20095EB4C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0FBD8EFB28A1FDB20095EB4C;
+			remoteInfo = FYFPieChart;
+		};
+		0FBD8F2228A1FDB40095EB4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0FBD8EF428A1FDB20095EB4C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0FBD8EFB28A1FDB20095EB4C;
+			remoteInfo = FYFPieChart;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0FBD8EFC28A1FDB20095EB4C /* FYFPieChart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FYFPieChart.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FBD8EFF28A1FDB20095EB4C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0FBD8F0028A1FDB20095EB4C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0FBD8F0228A1FDB20095EB4C /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		0FBD8F0328A1FDB20095EB4C /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		0FBD8F0528A1FDB20095EB4C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0FBD8F0628A1FDB20095EB4C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0FBD8F0928A1FDB20095EB4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0FBD8F0B28A1FDB30095EB4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0FBD8F0E28A1FDB30095EB4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0FBD8F1028A1FDB30095EB4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FBD8F1128A1FDB30095EB4C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0FBD8F1728A1FDB40095EB4C /* FYFPieChartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FYFPieChartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FBD8F1B28A1FDB40095EB4C /* FYFPieChartTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FYFPieChartTests.m; sourceTree = "<group>"; };
+		0FBD8F2128A1FDB40095EB4C /* FYFPieChartUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FYFPieChartUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FBD8F2528A1FDB40095EB4C /* FYFPieChartUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FYFPieChartUITests.m; sourceTree = "<group>"; };
+		0FBD8F2728A1FDB40095EB4C /* FYFPieChartUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FYFPieChartUITestsLaunchTests.m; sourceTree = "<group>"; };
+		0FBD8F3428A1FE090095EB4C /* FYFPieModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYFPieModel.h; sourceTree = "<group>"; };
+		0FBD8F3528A1FE090095EB4C /* FYFPieChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYFPieChartView.m; sourceTree = "<group>"; };
+		0FBD8F3628A1FE090095EB4C /* FYFPieModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYFPieModel.m; sourceTree = "<group>"; };
+		0FBD8F3728A1FE090095EB4C /* FYFPieChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYFPieChartView.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0FBD8EF928A1FDB20095EB4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FBD8F1428A1FDB40095EB4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FBD8F1E28A1FDB40095EB4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0FBD8EF328A1FDB10095EB4C = {
+			isa = PBXGroup;
+			children = (
+				0FBD8EFE28A1FDB20095EB4C /* FYFPieChart */,
+				0FBD8F1A28A1FDB40095EB4C /* FYFPieChartTests */,
+				0FBD8F2428A1FDB40095EB4C /* FYFPieChartUITests */,
+				0FBD8EFD28A1FDB20095EB4C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0FBD8EFD28A1FDB20095EB4C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0FBD8EFC28A1FDB20095EB4C /* FYFPieChart.app */,
+				0FBD8F1728A1FDB40095EB4C /* FYFPieChartTests.xctest */,
+				0FBD8F2128A1FDB40095EB4C /* FYFPieChartUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0FBD8EFE28A1FDB20095EB4C /* FYFPieChart */ = {
+			isa = PBXGroup;
+			children = (
+				0FBD8EFF28A1FDB20095EB4C /* AppDelegate.h */,
+				0FBD8F0028A1FDB20095EB4C /* AppDelegate.m */,
+				0FBD8F0228A1FDB20095EB4C /* SceneDelegate.h */,
+				0FBD8F0328A1FDB20095EB4C /* SceneDelegate.m */,
+				0FBD8F0528A1FDB20095EB4C /* ViewController.h */,
+				0FBD8F0628A1FDB20095EB4C /* ViewController.m */,
+				0FBD8F3728A1FE090095EB4C /* FYFPieChartView.h */,
+				0FBD8F3528A1FE090095EB4C /* FYFPieChartView.m */,
+				0FBD8F3428A1FE090095EB4C /* FYFPieModel.h */,
+				0FBD8F3628A1FE090095EB4C /* FYFPieModel.m */,
+				0FBD8F0828A1FDB20095EB4C /* Main.storyboard */,
+				0FBD8F0B28A1FDB30095EB4C /* Assets.xcassets */,
+				0FBD8F0D28A1FDB30095EB4C /* LaunchScreen.storyboard */,
+				0FBD8F1028A1FDB30095EB4C /* Info.plist */,
+				0FBD8F1128A1FDB30095EB4C /* main.m */,
+			);
+			path = FYFPieChart;
+			sourceTree = "<group>";
+		};
+		0FBD8F1A28A1FDB40095EB4C /* FYFPieChartTests */ = {
+			isa = PBXGroup;
+			children = (
+				0FBD8F1B28A1FDB40095EB4C /* FYFPieChartTests.m */,
+			);
+			path = FYFPieChartTests;
+			sourceTree = "<group>";
+		};
+		0FBD8F2428A1FDB40095EB4C /* FYFPieChartUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0FBD8F2528A1FDB40095EB4C /* FYFPieChartUITests.m */,
+				0FBD8F2728A1FDB40095EB4C /* FYFPieChartUITestsLaunchTests.m */,
+			);
+			path = FYFPieChartUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0FBD8EFB28A1FDB20095EB4C /* FYFPieChart */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FBD8F2B28A1FDB40095EB4C /* Build configuration list for PBXNativeTarget "FYFPieChart" */;
+			buildPhases = (
+				0FBD8EF828A1FDB20095EB4C /* Sources */,
+				0FBD8EF928A1FDB20095EB4C /* Frameworks */,
+				0FBD8EFA28A1FDB20095EB4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FYFPieChart;
+			productName = FYFPieChart;
+			productReference = 0FBD8EFC28A1FDB20095EB4C /* FYFPieChart.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0FBD8F1628A1FDB40095EB4C /* FYFPieChartTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FBD8F2E28A1FDB40095EB4C /* Build configuration list for PBXNativeTarget "FYFPieChartTests" */;
+			buildPhases = (
+				0FBD8F1328A1FDB40095EB4C /* Sources */,
+				0FBD8F1428A1FDB40095EB4C /* Frameworks */,
+				0FBD8F1528A1FDB40095EB4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0FBD8F1928A1FDB40095EB4C /* PBXTargetDependency */,
+			);
+			name = FYFPieChartTests;
+			productName = FYFPieChartTests;
+			productReference = 0FBD8F1728A1FDB40095EB4C /* FYFPieChartTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0FBD8F2028A1FDB40095EB4C /* FYFPieChartUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FBD8F3128A1FDB40095EB4C /* Build configuration list for PBXNativeTarget "FYFPieChartUITests" */;
+			buildPhases = (
+				0FBD8F1D28A1FDB40095EB4C /* Sources */,
+				0FBD8F1E28A1FDB40095EB4C /* Frameworks */,
+				0FBD8F1F28A1FDB40095EB4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0FBD8F2328A1FDB40095EB4C /* PBXTargetDependency */,
+			);
+			name = FYFPieChartUITests;
+			productName = FYFPieChartUITests;
+			productReference = 0FBD8F2128A1FDB40095EB4C /* FYFPieChartUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0FBD8EF428A1FDB20095EB4C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					0FBD8EFB28A1FDB20095EB4C = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					0FBD8F1628A1FDB40095EB4C = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 0FBD8EFB28A1FDB20095EB4C;
+					};
+					0FBD8F2028A1FDB40095EB4C = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 0FBD8EFB28A1FDB20095EB4C;
+					};
+				};
+			};
+			buildConfigurationList = 0FBD8EF728A1FDB20095EB4C /* Build configuration list for PBXProject "FYFPieChart" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0FBD8EF328A1FDB10095EB4C;
+			productRefGroup = 0FBD8EFD28A1FDB20095EB4C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0FBD8EFB28A1FDB20095EB4C /* FYFPieChart */,
+				0FBD8F1628A1FDB40095EB4C /* FYFPieChartTests */,
+				0FBD8F2028A1FDB40095EB4C /* FYFPieChartUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0FBD8EFA28A1FDB20095EB4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FBD8F0F28A1FDB30095EB4C /* LaunchScreen.storyboard in Resources */,
+				0FBD8F0C28A1FDB30095EB4C /* Assets.xcassets in Resources */,
+				0FBD8F0A28A1FDB20095EB4C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FBD8F1528A1FDB40095EB4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FBD8F1F28A1FDB40095EB4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0FBD8EF828A1FDB20095EB4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FBD8F0728A1FDB20095EB4C /* ViewController.m in Sources */,
+				0FBD8F3928A1FE090095EB4C /* FYFPieModel.m in Sources */,
+				0FBD8F0128A1FDB20095EB4C /* AppDelegate.m in Sources */,
+				0FBD8F1228A1FDB30095EB4C /* main.m in Sources */,
+				0FBD8F3828A1FE090095EB4C /* FYFPieChartView.m in Sources */,
+				0FBD8F0428A1FDB20095EB4C /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FBD8F1328A1FDB40095EB4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FBD8F1C28A1FDB40095EB4C /* FYFPieChartTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FBD8F1D28A1FDB40095EB4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FBD8F2828A1FDB40095EB4C /* FYFPieChartUITestsLaunchTests.m in Sources */,
+				0FBD8F2628A1FDB40095EB4C /* FYFPieChartUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0FBD8F1928A1FDB40095EB4C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0FBD8EFB28A1FDB20095EB4C /* FYFPieChart */;
+			targetProxy = 0FBD8F1828A1FDB40095EB4C /* PBXContainerItemProxy */;
+		};
+		0FBD8F2328A1FDB40095EB4C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0FBD8EFB28A1FDB20095EB4C /* FYFPieChart */;
+			targetProxy = 0FBD8F2228A1FDB40095EB4C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0FBD8F0828A1FDB20095EB4C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0FBD8F0928A1FDB20095EB4C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0FBD8F0D28A1FDB30095EB4C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0FBD8F0E28A1FDB30095EB4C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0FBD8F2928A1FDB40095EB4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0FBD8F2A28A1FDB40095EB4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0FBD8F2C28A1FDB40095EB4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4H33EPS92X;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FYFPieChart/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fanyunfei.FYFPieChart.FYFPieChart;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0FBD8F2D28A1FDB40095EB4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4H33EPS92X;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FYFPieChart/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fanyunfei.FYFPieChart.FYFPieChart;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0FBD8F2F28A1FDB40095EB4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4H33EPS92X;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fanyunfei.FYFPieChart.FYFPieChartTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FYFPieChart.app/FYFPieChart";
+			};
+			name = Debug;
+		};
+		0FBD8F3028A1FDB40095EB4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4H33EPS92X;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fanyunfei.FYFPieChart.FYFPieChartTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FYFPieChart.app/FYFPieChart";
+			};
+			name = Release;
+		};
+		0FBD8F3228A1FDB40095EB4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4H33EPS92X;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fanyunfei.FYFPieChart.FYFPieChartUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FYFPieChart;
+			};
+			name = Debug;
+		};
+		0FBD8F3328A1FDB40095EB4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4H33EPS92X;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fanyunfei.FYFPieChart.FYFPieChartUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FYFPieChart;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0FBD8EF728A1FDB20095EB4C /* Build configuration list for PBXProject "FYFPieChart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FBD8F2928A1FDB40095EB4C /* Debug */,
+				0FBD8F2A28A1FDB40095EB4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0FBD8F2B28A1FDB40095EB4C /* Build configuration list for PBXNativeTarget "FYFPieChart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FBD8F2C28A1FDB40095EB4C /* Debug */,
+				0FBD8F2D28A1FDB40095EB4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0FBD8F2E28A1FDB40095EB4C /* Build configuration list for PBXNativeTarget "FYFPieChartTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FBD8F2F28A1FDB40095EB4C /* Debug */,
+				0FBD8F3028A1FDB40095EB4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0FBD8F3128A1FDB40095EB4C /* Build configuration list for PBXNativeTarget "FYFPieChartUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FBD8F3228A1FDB40095EB4C /* Debug */,
+				0FBD8F3328A1FDB40095EB4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0FBD8EF428A1FDB20095EB4C /* Project object */;
+}
