@@ -25,14 +25,14 @@
     self.view.backgroundColor = [UIColor blackColor];
     
     FYFPieModel *model1 = [[FYFPieModel alloc] init];
-    model1.scale = 0.4;
+    model1.scale = 0.1;
     model1.title = @"息差收入";
     model1.desc = @"2890.28万元\n23.12%";
     model1.color = [UIColor redColor];
     
     
     FYFPieModel *model2 = [[FYFPieModel alloc] init];
-    model2.scale = 0.3;
+    model2.scale = 0.2;
     model2.title = @"手续费减免收入";
     model2.desc = @"2890.28万元\n23.12%";
     model2.color = [UIColor orangeColor];
@@ -44,8 +44,20 @@
     model3.desc = @"2890.28万元\n23.12%";
     model3.color = [UIColor blueColor];
     
+    FYFPieModel *model4 = [[FYFPieModel alloc] init];
+    model4.scale = 0.2;
+    model4.title = @"留存手续费";
+    model4.desc = @"2890.28万元\n23.12%";
+    model4.color = [UIColor greenColor];
+    
+    FYFPieModel *model5 = [[FYFPieModel alloc] init];
+    model5.scale = 0.2;
+    model5.title = @"留存手续费";
+    model5.desc = @"2890.28万元\n23.12%";
+    model5.color = [UIColor greenColor];
+    
     [self.view addSubview:self.pieChartView];
-    self.pieChartView.pieModels = @[model1, model2, model3];
+    self.pieChartView.pieModels = @[model1, model2, model3, model4, model5];
     [self.pieChartView draw];
     
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
